@@ -1,0 +1,16 @@
+/* Allgemeines Layout */
+body {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+/* Header */
+header {
+  background-color: #ff6600;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
