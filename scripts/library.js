@@ -1,4 +1,4 @@
-let restaranteMenu = [
+let restaurantMenu = [
     {
         "Hauptgericht": [
         {
@@ -37,11 +37,11 @@ let restaranteMenu = [
             "currency": "€",
         },
         ]
-    }
+    },
     {
-        "Salate": [
+        "Salad": [
         {
-            "name": "Kleiner Gemischter,
+            "name": "Kleiner Gemischter",
             "ingredients": "mit grüner Salat und Tomaten",
             "img": "./assets/img/food1.png",
             "price": 7.99,
