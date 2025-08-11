@@ -17,21 +17,7 @@
     inset -2px -11px 20px rgba(0, 0, 0, 0.4);
 }
 
-button {
-  cursor: pointer;
-  border: 0;
-  border-radius: 4px;
-  font-weight: 600;
-  margin: 0 10px;
-  width: 100px;
-  padding: 10px 0;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05),
-    0 10px 20px rgba(0, 0, 0, 0.4);
-  transition: 0.4s;
-}
-
 button:hover {
-  color: white;
-  box-shadow: 0 0 20px rgba(224, 178, 85, 0.6);
-  background-color: rgb(224, 168, 85);
+  box-shadow: 0 0 20px rgba(212, 176, 120, 0.6);
+  background-color: rgb(212, 176, 120);
 }

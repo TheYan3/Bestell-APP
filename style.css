@@ -1,5 +1,4 @@
-body {
-  background-color: #1c1c1c;
+* {
   color: #fff;
 }
 
@@ -11,4 +10,18 @@ header {
   font-size: 1.8rem;
   font-weight: bold;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-box {
+  width: calc(100% - 300px);
+  padding: 16px;
+}
+
+.struktur-wrapper {
+  gap: 2px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: #303030;
 }

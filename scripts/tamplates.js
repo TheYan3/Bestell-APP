@@ -1,21 +1,27 @@
 function getMainmenuTemplates(mainmenu) {
-    return `  <article >
+    return ` 
+    <button>
+    <div class="text-button">
     <h3>${mainmenu.name}</h3>
     <p>${mainmenu.ingredients}</p>
-    <span class="price">${mainmenu.price}</span>
-    <p>${mainmenu.currency}</p>
-    <button class="add-btn">+</button>
-    </article>
+    <span class="price">${mainmenu.price}€</span> 
+    </div>
+    <img class="basket-button" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
+    </button>
+  
     `  
 }
 
 function getSaladTemplates(salad) {
-    return `  <article >
+    return ` 
+     <button> 
+     <div class="text-button">
     <h3>${salad.name}</h3>
     <p>${salad.ingredients}</p>
-    <span class="price">${salad.price}</span>
-    <p>${salad.currency}</p>
-    <button class="add-btn">+</button>
-    </article>
+    <span class="price">${salad.price}€</span> 
+    </div>
+    <img class="basket-button" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
+    </button>
+    
     `  
 } 
