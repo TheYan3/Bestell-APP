@@ -10,7 +10,6 @@ function getMainmenuTemplates(mainmenu, menuindex) {
      </button>
     `;  
 }
-
 function getSaladTemplates(salad, menuindex) {
     return ` 
      <button onclick="getToBasket(1, ${menuindex})"> 
@@ -34,7 +33,6 @@ function getDrinkTemplates(drink, menuindex) {
      </button>
     `;  
 } 
-
 function getBasketTemplates(basketlist, basketindex) {
     return `
         <div class="basket-row">

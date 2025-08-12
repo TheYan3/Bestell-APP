@@ -8,6 +8,29 @@ function init() {
     renderBasket()
 }
 
+function filterTabs(i) {
+    const menuBoxRef = document.innerHTML("menu-box")
+    menuBoxRef.innerHTML = ""
+
+    switch (i) {
+        case value: 1
+        menuBoxRef.innerHTML = ""
+        getMainmenu()
+            break;
+        case value: 2
+        menuBoxRef.innerHTML = ""
+        getSaladmenu()
+            break;
+        case value: 3
+        menuBoxRef.innerHTML = ""
+        getDrinksmenu()
+            break;
+        
+        default:
+            init()
+            break;
+    }
+}
 function getMainmenu() {
     let mainmenuRef = document.getElementById('mainmenu-list')
 
