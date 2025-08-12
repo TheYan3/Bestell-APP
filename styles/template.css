@@ -10,15 +10,3 @@ button {
   flex-direction: row;
   justify-content: space-between;
 }
-
-.basket-button {
-  height: 40px;
-  width: 40px;
-}
-
-.text-button {
-  display: flex;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}

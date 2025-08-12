@@ -13,7 +13,7 @@
     <script src="./scripts/tamplates.js"></script>
     <script src="script.js"></script>
   </head>
-  <body id="start" onload="loadMenu()">
+  <body id="start" onload="init()">
     <header>
       <a href="#start"
         ><img
@@ -46,7 +46,12 @@
         </section>
       </section>
       <section class="basket">
-        <div class="basket-content">Warenkorb</div>
+        <div class="basket-content">
+          <h2>Warenkorb</h2>
+          <div id="court-basket"></div>
+          <h3>Total:</h3>
+          <div id="basket-total"></div>
+        </div>
       </section>
     </div>
     <footer class="app-footer">
