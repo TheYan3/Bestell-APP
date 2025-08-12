@@ -3,13 +3,15 @@
 }
 
 header {
-  background-color: #ff6600;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  background: #ff8604;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  outline: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px 8px;
+  box-shadow: inset 0px -20px 0 1px rgba(255, 255, 255, 0.05),
+    inset -2px -11px 20px rgba(0, 0, 0, 0.4);
 }
 
 .menu-box {
