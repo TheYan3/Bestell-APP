@@ -9,7 +9,7 @@ let restaurantMenu = [
             
         },
         {
-            "name": "Pizza Magaritta",
+            "name": "Pizza Margarita",
             "ingredients": "mit Tomatensoße Käse",
             "img": "./assets/img/food1.png",
             "price": 7.99,
@@ -35,7 +35,7 @@ let restaurantMenu = [
             "img": "./assets/img/food1.png",
             "price": 10.99,
             
-        },
+        }
         ]
     },
     {
@@ -74,7 +74,40 @@ let restaurantMenu = [
             "img": "./assets/img/food1.png",
             "price": 13,
             
+        }
+        ]
+    },
+    {
+        "drink": [
+        {
+            "name": "Cola 0,33cl",
+            "img": "./assets/img/food1.png",
+            "price": 2.59,
+            
         },
+        {
+            "name": "Fanta 0,33cl",
+            "img": "./assets/img/food1.png",
+            "price": 2.59,    
+        },
+        {
+            "name": "Energy 0,5cl",
+            "img": "./assets/img/food1.png",
+            "price": 3.59,
+            
+        },
+        {
+            "name": "Wasser 0,5cl",
+            "img": "./assets/img/food1.png",
+            "price": 2.00,
+            
+        },
+        {
+            "name": "Sprudel 0,5cl",
+            "img": "./assets/img/food1.png",
+            "price": 2.00,
+            
+        }
         ]
     }
   ]
