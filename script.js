@@ -9,25 +9,25 @@ function init() {
 }
 
 function filterTabs(i) {
-    const menuBoxRef = document.innerHTML("menu-box")
-    menuBoxRef.innerHTML = ""
-
-    switch (i) {
-        case value: 1
-        menuBoxRef.innerHTML = ""
-        getMainmenu()
+ let menuBoxRef = document.getElementById('menu-box')
+ menuBoxRef.innerHTML = ""
+     switch (i) {
+        case 1: 
+        menuBoxRef.innerHTML = filterMainmenuTemplate();
+        getMainmenu();
             break;
-        case value: 2
-        menuBoxRef.innerHTML = ""
-        getSaladmenu()
+        case 2: 
+        menuBoxRef.innerHTML = filterSaladTemplate();
+        getSaladmenu();
             break;
-        case value: 3
-        menuBoxRef.innerHTML = ""
-        getDrinksmenu()
+        case 3: 
+        menuBoxRef.innerHTML = filterDrinkTemplate();
+        getDrinksmenu();
             break;
         
         default:
-            init()
+            menuBoxRef.innerHTML += resetTemplates();
+            init();
             break;
     }
 }
