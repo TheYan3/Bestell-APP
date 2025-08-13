@@ -5,6 +5,9 @@
   margin-right: 10px;
 }
 
+.tab-button {
+  flex: 1;
+}
 button:hover {
   box-shadow: 0 0 20px rgba(212, 176, 120, 0.6);
   background-color: rgb(212, 176, 120);

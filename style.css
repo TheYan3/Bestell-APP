@@ -2,6 +2,13 @@
   color: #fff;
 }
 
+body {
+  min-height: 100vh;
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   align-items: center;
   background: #ff8604;
@@ -9,16 +16,23 @@ header {
   justify-content: space-between;
   height: 90px;
   outline: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 0px 8px;
-  box-shadow: inset 0px -20px 0 1px rgba(255, 255, 255, 0.05),
-    inset -2px -11px 20px rgba(0, 0, 0, 0.4);
-}
-
-.menu-box {
-  width: calc(100% - 300px);
   padding: 16px;
+  box-shadow: inset -1px -15px 20px rgba(0, 0, 0, 0.4);
 }
 
+main {
+  flex: 1;
+}
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+h2 {
+  border-bottom: solid 2px;
+  border-color: #ff8604;
+  margin: 16px 0;
+}
 .struktur-wrapper {
   gap: 2px;
   padding: 2px;
@@ -26,4 +40,22 @@ header {
   flex-direction: row;
   flex-grow: 1;
   background-color: #303030;
+}
+
+.left-wrapper {
+  gap: 2px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #303030;
+  margin: 16px;
+}
+
+footer {
+  background-color: #ff8604;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
 }
