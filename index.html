@@ -15,50 +15,60 @@
   </head>
   <body id="start" onload="init()">
     <header>
-      <a href="#start"
+      <a onclick="filterTabs(0)" href="#start"
         ><img
           class="logo"
           src="./assets/Logo/Bestell App- Logo.svg"
           alt="bestellapp logo"
       /></a>
     </header>
+    <main>
+      <div class="struktur-wrapper">
+        <div class="left-wrapper">
+          <div>
+            <section class="tab-section">
+              <h2>Super Mario Pizza</h2>
+              <p>Bewertungen (4,4 von 5 Sternen)</p>
+            </section>
+          </div>
+          <nav>
+            <button class="tab-button" id="Tab-filter" onclick="filterTabs(1)">
+              Hauptgerichte
+            </button>
+            <button class="tab-button" id="Tab-filter" onclick="filterTabs(2)">
+              Salata
+            </button>
+            <button class="tab-button" id="Tab-filter" onclick="filterTabs(3)">
+              Getränke
+            </button>
+          </nav>
+          <section id="menu-box">
+            <section class="list" id="mainmenu-list">
+              <img src="" alt="" />
+              <h2>Hauptgerichte</h2>
+            </section>
 
-    <div class="struktur-wrapper">
-      <nav>
-        <button id="Tab-filter" onclick="filterTabs(1)">Hauptgerichte</button>
-        <button id="Tab-filter" onclick="filterTabs(2)">Salata</button>
-        <button id="Tab-filter" onclick="filterTabs(3)">Getränke</button>
-      </nav>
-      <section class="menu-box" id="menu-box">
-        <section class="tab-section">
-          <h2>Super Mario Pizza</h2>
-          <p>Bewertungen (4,4 von 5 Sternen)</p>
-        </section>
+            <section class="list" id="saladmenu-list">
+              <img src="" alt="" />
+              <h2>Salate</h2>
+            </section>
 
-        <section class="list" id="mainmenu-list">
-          <img src="" alt="" />
-          <h2>Hauptgerichte</h2>
-        </section>
-
-        <section class="list" id="saladmenu-list">
-          <img src="" alt="" />
-          <h2>Salate</h2>
-        </section>
-
-        <section class="list" id="drinkmenu-list">
-          <img src="" alt="" />
-          <h2>Getränke</h2>
-        </section>
-      </section>
-      <section class="basket">
-        <div class="basket-content">
-          <h2>Warenkorb</h2>
-          <div id="court-basket"></div>
-          <h3>Total:</h3>
-          <div id="basket-total"></div>
+            <section class="list" id="drinkmenu-list">
+              <img src="" alt="" />
+              <h2>Getränke</h2>
+            </section>
+          </section>
         </div>
-      </section>
-    </div>
+        <section class="basket">
+          <div class="basket-content">
+            <h2>Warenkorb</h2>
+            <div id="court-basket"></div>
+            <h3>Total:</h3>
+            <div id="basket-total"></div>
+          </div>
+        </section>
+      </div>
+    </main>
     <footer class="app-footer">
       <p>&copy; 2025 BestellApp</p>
     </footer>

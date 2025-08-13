@@ -6,7 +6,7 @@ function getMainmenuTemplates(mainmenu, menuindex) {
      <p>${mainmenu.ingredients}</p>
      <span class="price">${mainmenu.price}€</span> 
      </div>
-     <img class="basket-button" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
+     <img class="basket-img" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
      </button>
     `;  
 }
@@ -18,7 +18,7 @@ function getSaladTemplates(salad, menuindex) {
      <p>${salad.ingredients}</p>
      <span class="price">${salad.price}€</span> 
      </div>
-     <img class="basket-button" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
+     <img class="basket-img" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
      </button>
     `;  
 } 
@@ -29,7 +29,7 @@ function getDrinkTemplates(drink, menuindex) {
      <h3>${drink.name}</h3>
      <span class="price">${drink.price}€</span> 
      </div>
-     <img class="basket-button" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
+     <img class="basket-img" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
      </button>
     `;  
 } 
@@ -48,4 +48,18 @@ function getBasketTemplates(basketlist, basketindex) {
             </div>
         </div>
         `;
+}
+function filterMainmenuTemplate() {
+    return  `<section class="list" id="mainmenu-list"><img src="" alt="" /><h2>Hauptgerichte</h2></section>`
+}
+function filterSaladTemplate() {
+    return  `<section class="list" id="saladmenu-list"><img src="" alt="" /><h2>Salate</h2></section>`
+}
+function filterDrinkTemplate() {
+    return  `<section class="list" id="drinkmenu-list"><img src="" alt="" /><h2>Getränke</h2></section>`
+}
+function resetTemplates() {
+    return  `<section class="list" id="mainmenu-list"><img src="" alt="" /><h2>Hauptgerichte</h2></section>
+             <section class="list" id="saladmenu-list"><img src="" alt="" /><h2>Salate</h2></section>
+             <section class="list" id="drinkmenu-list"><img src="" alt="" /><h2>Getränke</h2></section>`
 }
