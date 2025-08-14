@@ -10,6 +10,7 @@ function getMainmenuTemplates(mainmenu, menuindex) {
      </button>
     `;  
 }
+
 function getSaladTemplates(salad, menuindex) {
     return ` 
      <button onclick="getToBasket(1, ${menuindex})"> 
@@ -22,6 +23,7 @@ function getSaladTemplates(salad, menuindex) {
      </button>
     `;  
 } 
+
 function getDrinkTemplates(drink, menuindex) {
     return ` 
      <button onclick="getToBasket(2, ${menuindex})"> 
@@ -33,6 +35,7 @@ function getDrinkTemplates(drink, menuindex) {
      </button>
     `;  
 } 
+
 function getBasketTemplates(basketlist, basketindex) {
     return `
         <div class="basket-row">
@@ -49,17 +52,21 @@ function getBasketTemplates(basketlist, basketindex) {
         </div>
         `;
 }
+
 function filterMainmenuTemplate() {
-    return  `<section class="list" id="mainmenu-list"><img src="" alt="" /><h2>Hauptgerichte</h2></section>`
+    return  `<section class="list" id="mainmenu-list"><img class="categorie-img" src="./assets/img/pizza.jpg" alt="kategorie Pizza" /><h2>Hauptgerichte</h2></section>`
 }
+
 function filterSaladTemplate() {
-    return  `<section class="list" id="saladmenu-list"><img src="" alt="" /><h2>Salate</h2></section>`
+    return  `<section class="list" id="saladmenu-list"> <img class="categorie-img" src="./assets/img/salat.jpg" alt="Kategorie Salate" /><h2>Salate</h2></section>`
 }
+
 function filterDrinkTemplate() {
-    return  `<section class="list" id="drinkmenu-list"><img src="" alt="" /><h2>Getränke</h2></section>`
+    return  `<section class="list" id="drinkmenu-list"><img class="categorie-img" src="./assets/img/getränke.jpg" alt="Kategorie Getränke" /><h2>Getränke</h2></section>`
 }
+
 function resetTemplates() {
-    return  `<section class="list" id="mainmenu-list"><img src="" alt="" /><h2>Hauptgerichte</h2></section>
-             <section class="list" id="saladmenu-list"><img src="" alt="" /><h2>Salate</h2></section>
-             <section class="list" id="drinkmenu-list"><img src="" alt="" /><h2>Getränke</h2></section>`
+    return  `<section class="list" id="mainmenu-list"><img class="categorie-img" src="./assets/img/pizza.jpg" alt="kategorie Pizza" /><h2>Hauptgerichte</h2></section>
+             <section class="list" id="saladmenu-list"> <img class="categorie-img" src="./assets/img/salat.jpg" alt="Kategorie Salate" /><h2>Salate</h2></section>
+             <section class="list" id="drinkmenu-list"><img class="categorie-img" src="./assets/img/getränke.jpg" alt="Kategorie Getränke" /><h2>Getränke</h2></section>`
 }
