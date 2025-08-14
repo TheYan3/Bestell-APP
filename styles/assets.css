@@ -12,3 +12,18 @@ button:hover {
   box-shadow: 0 0 20px rgba(212, 176, 120, 0.6);
   background-color: rgb(212, 176, 120);
 }
+.aot-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.logo-mario {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 100px;
+  border: 1px solid black;
+  box-shadow: -7px 9px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 90px;
+}
