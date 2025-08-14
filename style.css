@@ -9,7 +9,7 @@ body {
   flex-direction: column;
 }
 
-header {
+.appHeader {
   align-items: center;
   background: #ff8604;
   display: flex;
@@ -33,6 +33,12 @@ h2 {
   border-color: #ff8604;
   margin: 16px 0;
 }
+
+.link-color {
+  color: #ff8604;
+  cursor: pointer;
+  padding-right: 16px;
+}
 .struktur-wrapper {
   gap: 2px;
   padding: 2px;
@@ -52,7 +58,7 @@ h2 {
   margin: 16px;
 }
 
-footer {
+.appFooter {
   background-color: #ff8604;
   height: 120px;
   display: flex;
