@@ -7,6 +7,7 @@ function openSuccedDialog() {
 function closSuccedDialog() {
     dialogRef.close()
     removeAllItems()
+    closeBasket()
 }
 
 function removeAllItems() {

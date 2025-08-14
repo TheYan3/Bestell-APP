@@ -39,3 +39,25 @@ function updateBasketTotal() {
     const total = basket.reduce((sum, item) => sum + item.price * item.amount, 0);
     document.getElementById('basket-total').textContent = total.toFixed(2) + '€';
 }
+
+function openBasket() {
+    const basketRef = document.getElementById("basket")
+    const logoRef = document.getElementById("logoMario")
+    const buttonRef = document.getElementById("closeButton")
+    const openButtonRef = document.getElementById("openButton")
+    basketRef.classList.add("mobileBasket")
+    logoRef.classList.add("hidden")
+    buttonRef.classList.remove("hidden")
+    openButtonRef.classList.add("hidden")
+}
+
+function closeBasket() {
+    const basketRef = document.getElementById("basket")
+    const logoRef = document.getElementById("logoMario")
+    const buttonRef = document.getElementById("closeButton")
+    const openButtonRef = document.getElementById("openButton")
+    basketRef.classList.remove("mobileBasket")
+    logoRef.classList.remove("hidden")
+    buttonRef.classList.add("hidden")
+    openButtonRef.classList.remove("hidden")
+}

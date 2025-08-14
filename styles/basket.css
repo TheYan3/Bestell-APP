@@ -60,7 +60,7 @@
   text-align: center;
 }
 
-.handyBasket {
+.mobileBotton {
   position: sticky;
   bottom: 0;
   background-color: blue;
@@ -68,4 +68,15 @@
   margin: 0;
   display: flex;
   justify-content: center;
+}
+
+.mobileBasket {
+  display: flex !important;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.mobileBody {
 }

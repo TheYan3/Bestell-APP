@@ -9,27 +9,13 @@ function init() {
 }
 
 function filterTabs(i) {
- let menuBoxRef = document.getElementById('menu-box')
- menuBoxRef.innerHTML = ""
-     switch (i) {
-        case 1: 
-        menuBoxRef.innerHTML = filterMainmenuTemplate();
-        getMainmenu();
-            break;
-        case 2: 
-        menuBoxRef.innerHTML = filterSaladTemplate();
-        getSaladmenu();
-            break;
-        case 3: 
-        menuBoxRef.innerHTML = filterDrinkTemplate();
-        getDrinksmenu();
-            break;
-        default:
-            menuBoxRef.innerHTML += resetTemplates();
-            init();
-            break;
-    }
-}
+    const box = document.getElementById('menu-box');
+    const templates = [resetTemplates, filterMainmenuTemplate, filterSaladTemplate, filterDrinkTemplate];
+    const actions   = [init,           getMainmenu,          getSaladmenu,          getDrinksmenu];
+    i = templates[i] ? i : 0;
+    box.innerHTML = templates[i]();  // Rückgabewert benutzen
+    actions[i]();                    // passende Render-Funktion
+  }
 
 function getMainmenu() {
     let mainmenuRef = document.getElementById('mainmenu-list')
@@ -61,8 +47,6 @@ function getDrinksmenu() {
 function  saveItToLocalStorage() {
     localStorage.setItem("basket", JSON.stringify(basket));
 }
-
-
 
 function getItem(listIndex, index) {
     if (listIndex === 0) return restaurantMenu[0].mainmenu[index];
