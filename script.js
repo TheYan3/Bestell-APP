@@ -74,4 +74,3 @@ function getToBasket(listIndex, itemIndex) {
     }
     StorageInit();
 }
-
