@@ -19,177 +19,179 @@
     <script src="script.js"></script>
   </head>
   <body id="start" onload="init()">
-    <header class="appHeader">
-      <a onclick="filterTabs(0)" href="#start"
-        ><img
-          class="logo"
-          src="./assets/Logo/Bestell App- Logo.svg"
-          alt="bestellapp logo"
-      /></a>
-    </header>
-    <main>
-      <div class="struktur-wrapper">
-        <div class="left-wrapper">
-          <div class="mario-container">
-            <img
-              id="logoMario"
-              class="logo-mario"
-              src="./assets/Logo/SuperMarioPizza.png"
-              alt="Super Mario hält eine Pizza"
-            />
-            <img
-              class="aot-img"
-              src="./assets/img/pizza-aot.jpg"
-              alt="lecker Pizza die schön angerichtet ist"
-            />
-          </div>
-          <div>
-            <section class="tab-section">
-              <h2>Super Mario Pizza</h2>
-              <p>
-                Wir freuen uns, dass Sie sich für unsere Speisen interessieren.
-                <br />
-                Hier kommt die pizza traditionell aus dem Steinofen
-                <br />
-                <br />
-              </p>
-              <a
-                class="link-color"
-                href="https://support.google.com/maps/answer/6230175?hl=de&co=GENIE.Platform%3DAndroid"
-                >Bewertungen (4,5 von 5)</a
-              >Lieferzeit: 30-45 Minuten | Lieferkosten: 2,50 €
-            </section>
-          </div>
-          <nav>
-            <button
-              type="button"
-              class="tab-button"
-              id="Tab-filter"
-              onclick="filterTabs(1)"
-            >
-              Hauptgerichte
-            </button>
-            <button
-              type="button"
-              class="tab-button"
-              id="Tab-filter"
-              onclick="filterTabs(2)"
-            >
-              Salata
-            </button>
-            <button
-              type="button"
-              class="tab-button"
-              id="Tab-filter"
-              onclick="filterTabs(3)"
-            >
-              Getränke
-            </button>
-          </nav>
-          <section id="menu-box">
-            <section class="list" id="mainmenu-list">
+    <div class="pageWrapper">
+      <header class="appHeader">
+        <a onclick="filterTabs(0)" href="#start"
+          ><img
+            class="logo"
+            src="./assets/Logo/Bestell App- Logo.svg"
+            alt="bestellapp logo"
+        /></a>
+      </header>
+      <main>
+        <div class="struktur-wrapper">
+          <div id="leftWrapper" class="left-wrapper">
+            <div class="mario-container">
               <img
-                class="categorie-img"
-                src="./assets/img/pizza.jpg"
-                alt="kategorie Pizza"
+                id="logoMario"
+                class="logo-mario"
+                src="./assets/Logo/SuperMarioPizza.png"
+                alt="Super Mario hält eine Pizza"
               />
-              <h2>Hauptgerichte</h2>
-            </section>
+              <img
+                class="aot-img"
+                src="./assets/img/pizza-aot.jpg"
+                alt="lecker Pizza die schön angerichtet ist"
+              />
+            </div>
+            <div>
+              <section class="tab-section">
+                <h2>Super Mario Pizza</h2>
+                <p>
+                  Wir freuen uns, dass Sie sich für unsere Speisen
+                  interessieren.
+                  <br />
+                  Hier kommt die pizza traditionell aus dem Steinofen
+                  <br />
+                  <br />
+                </p>
+                <a
+                  class="link-color"
+                  href="https://support.google.com/maps/answer/6230175?hl=de&co=GENIE.Platform%3DAndroid"
+                  >Bewertungen (4,5 von 5)</a
+                >Lieferzeit: 30-45 Minuten | Lieferkosten: 2,50 €
+              </section>
+            </div>
+            <nav>
+              <button
+                type="button"
+                class="tab-button"
+                id="Tab-filter"
+                onclick="filterTabs(1)"
+              >
+                Hauptgerichte
+              </button>
+              <button
+                type="button"
+                class="tab-button"
+                id="Tab-filter"
+                onclick="filterTabs(2)"
+              >
+                Salata
+              </button>
+              <button
+                type="button"
+                class="tab-button"
+                id="Tab-filter"
+                onclick="filterTabs(3)"
+              >
+                Getränke
+              </button>
+            </nav>
+            <section id="menu-box">
+              <section class="list" id="mainmenu-list">
+                <img
+                  class="categorie-img"
+                  src="./assets/img/pizza.jpg"
+                  alt="kategorie Pizza"
+                />
+                <h2>Hauptgerichte</h2>
+              </section>
 
-            <section class="list" id="saladmenu-list">
-              <img
-                class="categorie-img"
-                src="./assets/img/salat.jpg"
-                alt="Kategorie Salate"
-              />
-              <h2>Salate</h2>
-            </section>
+              <section class="list" id="saladmenu-list">
+                <img
+                  class="categorie-img"
+                  src="./assets/img/salat.jpg"
+                  alt="Kategorie Salate"
+                />
+                <h2>Salate</h2>
+              </section>
 
-            <section class="list" id="drinkmenu-list">
-              <img
-                class="categorie-img"
-                src="./assets/img/getränke.jpg"
-                alt="Kategorie Getränke"
-              />
-              <h2>Getränke</h2>
+              <section class="list" id="drinkmenu-list">
+                <img
+                  class="categorie-img"
+                  src="./assets/img/getränke.jpg"
+                  alt="Kategorie Getränke"
+                />
+                <h2>Getränke</h2>
+              </section>
             </section>
+          </div>
+          <section id="basket" class="basket">
+            <div class="basket-content">
+              <h2>Warenkorb</h2>
+              <div id="court-basket"></div>
+              <h3>Total:</h3>
+              <div id="basket-total"></div>
+
+              <div class="order-button">
+                <p>
+                  Klicke auf den Button, um die Test-Bestellung-Bestätigung zu
+                  sehen.
+                </p>
+                <button
+                  aria-controls="dialog"
+                  type="button"
+                  onclick="openSuccedDialog()"
+                >
+                  Bestellung abschicken
+                </button>
+              </div>
+
+              <dialog
+                aria-haspopup="dialog"
+                aria-labelledby="dialogTitel"
+                aria-describedby="dialogDescr"
+                id="orderdialog"
+                class="dialog"
+              >
+                <div class="dialogWrapper">
+                  <head>
+                    <h2 id="dialogTitel">
+                      Vielen Dank, für Ihre Test Bestellung!
+                    </h2>
+                  </head>
+                  <section>
+                    <p id="dialogDescr">
+                      Ihre bestellung wird für sie vorbereitet!
+                    </p>
+                  </section>
+                  <footer>
+                    <button
+                      aria-label="Dialog schließen"
+                      type="button"
+                      onclick="closSuccedDialog()"
+                    >
+                      Zur Startseite
+                    </button>
+                  </footer>
+                </div>
+              </dialog>
+            </div>
           </section>
         </div>
-        <section id="basket" class="basket">
-          <div class="basket-content">
-            <h2>Warenkorb</h2>
-            <div id="court-basket"></div>
-            <h3>Total:</h3>
-            <div id="basket-total"></div>
+      </main>
+      <footer class="appFooter">
+        <p>&copy; 2025 BestellApp</p>
+      </footer>
 
-            <div class="order-button">
-              <p>
-                Klicke auf den Button, um die Test-Bestellung-Bestätigung zu
-                sehen.
-              </p>
-              <button
-                aria-controls="dialog"
-                type="button"
-                onclick="openSuccedDialog()"
-              >
-                Bestellung abschicken
-              </button>
-            </div>
-
-            <dialog
-              aria-haspopup="dialog"
-              aria-labelledby="dialogTitel"
-              aria-describedby="dialogDescr"
-              id="orderdialog"
-              class="dialog"
-            >
-              <div class="dialogWrapper">
-                <head>
-                  <h2 id="dialogTitel">
-                    Vielen Dank, für Ihre Test Bestellung!
-                  </h2>
-                </head>
-                <section>
-                  <p id="dialogDescr">
-                    Ihre bestellung wird für sie vorbereitet!
-                  </p>
-                </section>
-                <footer>
-                  <button
-                    aria-label="Dialog schließen"
-                    type="button"
-                    onclick="closSuccedDialog()"
-                  >
-                    Zur Startseite
-                  </button>
-                </footer>
-              </div>
-            </dialog>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="appFooter">
-      <p>&copy; 2025 BestellApp</p>
-    </footer>
-
-    <button
-      id="openButton"
-      type="button"
-      class="mobileBotton"
-      onclick="toggleBasket()"
-    >
-      Warenkorb
-    </button>
-    <button
-      id="closeButton"
-      type="button"
-      class="mobileBotton hidden"
-      onclick="toggleBasket() "
-    >
-      Weiter Einkaufen
-    </button>
-
+      <button
+        id="openButton"
+        type="button"
+        class="mobileBotton"
+        onclick="toggleBasket()"
+      >
+        Warenkorb
+      </button>
+      <button
+        id="closeButton"
+        type="button"
+        class="mobileBotton hidden"
+        onclick="toggleBasket() "
+      >
+        Weiter Einkaufen
+      </button>
+    </div>
     <script src="./scripts/dialog.js"></script>
   </body>
 </html>

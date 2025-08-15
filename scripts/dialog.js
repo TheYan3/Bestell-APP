@@ -11,7 +11,7 @@ function openSuccedDialog() {
 function closSuccedDialog() {
     dialogRef.close()
     removeAllItems()
-    closeBasket()
+    togglBasket()
 }
 
 function removeAllItems() {

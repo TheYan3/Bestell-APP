@@ -13,8 +13,8 @@ function filterTabs(i) {
     const templates = [resetTemplates, filterMainmenuTemplate, filterSaladTemplate, filterDrinkTemplate];
     const actions   = [init,           getMainmenu,          getSaladmenu,          getDrinksmenu];
     i = templates[i] ? i : 0;
-    box.innerHTML = templates[i]();  // Rückgabewert benutzen
-    actions[i]();                    // passende Render-Funktion
+    box.innerHTML = templates[i]();  
+    actions[i]();                   
   }
 
 function getMainmenu() {
@@ -74,3 +74,4 @@ function getToBasket(listIndex, itemIndex) {
     }
     StorageInit();
 }
+

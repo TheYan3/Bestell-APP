@@ -60,20 +60,30 @@
   text-align: center;
 }
 
+.court-basket {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 .mobileBotton {
   position: sticky;
   bottom: 0;
   background-color: blue;
   width: 100%;
-  margin: 0;
+  margin: 0 16px;
   display: flex;
   justify-content: center;
 }
 
 .mobileBasket {
   display: flex !important;
-  position: fixed;
+  position: static;
   width: 100%;
-  height: 100%;
   top: 0;
+}
+
+.mobileBody {
+  margin: 0;
+  overflow: hidden;
 }

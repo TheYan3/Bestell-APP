@@ -17,7 +17,9 @@ body {
   height: 90px;
   outline: 1px solid rgba(0, 0, 0, 0.8);
   padding: 16px;
-  box-shadow: inset -1px -15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: -9px 10px 20px rgba(0, 0, 0, 0.4);
+  margin: 0 16px;
+  border-radius: 16px;
 }
 
 main {
@@ -40,20 +42,13 @@ h2 {
   padding-right: 16px;
 }
 .struktur-wrapper {
-  gap: 2px;
-  padding: 2px;
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
-  background-color: #303030;
 }
 
 .left-wrapper {
-  gap: 2px;
-  padding: 2px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   background-color: #303030;
   margin: 16px;
 }
@@ -64,6 +59,8 @@ h2 {
   display: flex;
   align-items: center;
   padding: 16px;
+  border-radius: 8px;
+  margin: 0 16px;
 }
 
 .mario-container {

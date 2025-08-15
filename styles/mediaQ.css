@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 880px) {
   .handyBasket {
     display: none;
   }
@@ -7,15 +7,19 @@
     display: none;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 880px) {
   .basket {
     display: none;
+  }
+
+  .basket {
+    margin-left: 16px;
   }
 }
 
 @media (max-width: 500px) {
   body {
-    font-size: 12px;
+    font-size: 16px;
   }
   .logo-mario {
     width: 60px;
@@ -26,7 +30,7 @@
   }
 
   .logo {
-    height: 50px;
+    height: 40px;
   }
 
   .aot-img {
@@ -34,15 +38,19 @@
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 21px;
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .left-wrapper {
     margin: 4px;
+  }
+
+  .appHeader {
+    margin: 0 4px;
   }
 
   button {
@@ -55,5 +63,9 @@
 
   nav {
     gap: 4px;
+  }
+
+  .appFooter {
+    margin: 0 4px;
   }
 }
