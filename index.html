@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BestellApp</title>
+    <link rel="icon" type="icon" href="./assets/Favicon/favicon.ico" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./styles/standart.css" />
     <link rel="stylesheet" href="./styles/assets.css" />
@@ -122,7 +123,10 @@
             <div id="basket-total"></div>
 
             <div class="order-button">
-              <p>Klicke auf den Button, um die Bestellbestätigung zu sehen.</p>
+              <p>
+                Klicke auf den Button, um die Test-Bestellung-Bestätigung zu
+                sehen.
+              </p>
               <button
                 aria-controls="dialog"
                 type="button"
@@ -141,7 +145,9 @@
             >
               <div class="dialogWrapper">
                 <head>
-                  <h2 id="dialogTitel">Vielen Dank, für Ihre Bestellung!</h2>
+                  <h2 id="dialogTitel">
+                    Vielen Dank, für Ihre Test Bestellung!
+                  </h2>
                 </head>
                 <section>
                   <p id="dialogDescr">
@@ -163,11 +169,15 @@
         </section>
       </div>
     </main>
+    <footer class="appFooter">
+      <p>&copy; 2025 BestellApp</p>
+    </footer>
+
     <button
       id="openButton"
       type="button"
       class="mobileBotton"
-      onclick="openBasket()"
+      onclick="toggleBasket()"
     >
       Warenkorb
     </button>
@@ -175,13 +185,10 @@
       id="closeButton"
       type="button"
       class="mobileBotton hidden"
-      onclick="closeBasket()"
+      onclick="toggleBasket() "
     >
       Weiter Einkaufen
     </button>
-    <footer class="appFooter">
-      <p>&copy; 2025 BestellApp</p>
-    </footer>
 
     <script src="./scripts/dialog.js"></script>
   </body>
