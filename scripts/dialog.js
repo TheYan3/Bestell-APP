@@ -1,7 +1,11 @@
 const dialogRef = document.getElementById("orderdialog");
 
 function openSuccedDialog() {
-    dialogRef.showModal();
+    if (basket.length == 0) {  
+        alert("Du hast nichts im Warenkorb!")   
+    }else {
+        dialogRef.showModal();
+    }   
 }
 
 function closSuccedDialog() {
