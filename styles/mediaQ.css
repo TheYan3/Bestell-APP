@@ -1,71 +1,72 @@
 @media (min-width: 880px) {
-  .handyBasket {
-    display: none;
-  }
+   .handyBasket {
+      display: none;
+   }
 
-  .mobileBotton {
-    display: none;
-  }
+   .mobileBasket {
+   }
 }
 @media (max-width: 880px) {
-  .basket {
-    display: none;
-  }
-
-  .basket {
-    margin-left: 16px;
-  }
+   .basket {
+      display: none;
+   }
+   .left-wrapper {
+      width: 100%;
+   }
+   .basket {
+      margin-left: 16px;
+   }
 }
 
 @media (max-width: 500px) {
-  body {
-    font-size: 16px;
-  }
-  .logo-mario {
-    width: 60px;
-  }
+   body {
+      font-size: 16px;
+   }
+   .logo-mario {
+      width: 60px;
+   }
 
-  .appHeader {
-    height: 60px;
-  }
+   .appHeader {
+      height: 60px;
+   }
 
-  .logo {
-    height: 40px;
-  }
+   .logo {
+      height: 40px;
+   }
 
-  .aot-img {
-    height: 200px;
-  }
+   .aot-img {
+      height: 200px;
+   }
 
-  h2 {
-    font-size: 21px;
-  }
+   h2 {
+      font-size: 21px;
+   }
 
-  h3 {
-    font-size: 18px;
-  }
+   h3 {
+      font-size: 18px;
+   }
 
-  .left-wrapper {
-    margin: 4px;
-  }
+   .left-wrapper {
+      margin: 4px;
+   }
 
-  .appHeader {
-    margin: 0 4px;
-  }
+   .appHeader {
+      margin: 0 4px;
+   }
 
-  button {
-    box-shadow: none;
-  }
+   button {
+      box-shadow: none;
+   }
 
-  .struktur-wrapper {
-    display: block;
-  }
+   .struktur-wrapper {
+      display: block;
+   }
 
-  nav {
-    gap: 4px;
-  }
+   nav {
+      gap: 4px;
+   }
 
-  .appFooter {
-    margin: 0 4px;
-  }
+   .appFooter {
+      margin: 0 4px;
+   }
 }

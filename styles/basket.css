@@ -1,89 +1,85 @@
 .basket {
-  width: 300px;
-  background-color: rgb(61, 61, 61);
-  padding: 16px;
-  min-height: 100vh;
-  box-shadow: -9px 8px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 8px;
-  margin: 16px 0;
-  margin-right: 16px;
+   width: 300px;
+   background-color: rgb(61, 61, 61);
+   padding: 16px;
+   min-height: 100vh;
+   box-shadow: -9px 8px 20px rgba(0, 0, 0, 0.4);
+   border-radius: 8px;
+   margin: 16px;
+   margin-right: 16px;
 }
 
 .basket-content {
-  width: 100%;
-  background-color: rgb(61, 61, 61);
-  position: sticky;
-  top: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+   width: 100%;
+   background-color: rgb(61, 61, 61);
+   position: sticky;
+   top: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
 .basket-row {
-  display: flex;
-  justify-content: space-around;
-  align-items: end;
-  margin: 18px 0;
+   display: flex;
+   justify-content: space-around;
+   align-items: end;
+   margin: 18px 0;
 }
 
 .basket-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
 }
 
 .basket-end {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
 }
 
 .basket-nav {
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  padding: 8px;
+   height: 30px;
+   width: 30px;
+   display: flex;
+   justify-content: center;
+   padding: 8px;
 }
 
 .order-button {
-  display: flex;
-  flex-direction: column;
-  padding-top: 16px;
-  align-items: center;
-  text-align: center;
+   display: flex;
+   flex-direction: column;
+   padding-top: 16px;
+   align-items: center;
+   text-align: center;
 }
 
 .court-basket {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
 }
 
 .mobileBotton {
-  position: sticky;
-  bottom: 0;
-  background-color: blue;
-  width: 100%;
-  margin: 0 16px;
-  display: flex;
-  justify-content: center;
+   position: sticky;
+   bottom: 0;
+   background-color: blue;
+   width: 100%;
+   margin: 0 16px;
+   display: flex;
+   justify-content: center;
 }
 
 .mobileBasket {
-  display: flex !important;
-  position: static;
-  width: 100%;
-  top: 0;
 }
 
 .mobileBody {
-  margin: 0;
-  overflow: hidden;
+   margin: 0;
+   overflow: hidden;
 }

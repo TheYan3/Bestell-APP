@@ -30,7 +30,7 @@ function getSaladmenu() {
     let saladRef = document.getElementById('saladmenu-list')
     
     for (let menuindex = 0; menuindex < restaurantMenu[1].salad.length; menuindex++) {
-        const salad = restaurantMenu[1].salad[menuindex]
+        const salad = restaurantMenu[1].salad[menuindex];
         saladRef.innerHTML += getSaladTemplates(salad, menuindex);
     }  
 }
@@ -39,7 +39,7 @@ function getDrinksmenu() {
     let drinkRef = document.getElementById('drinkmenu-list')
 
     for (let menuindex = 0; menuindex < restaurantMenu[2].drink.length; menuindex++) {
-        const drink = restaurantMenu[2].drink[menuindex]
+        const drink = restaurantMenu[2].drink[menuindex];
         drinkRef.innerHTML += getDrinkTemplates(drink, menuindex);
     }  
 }
