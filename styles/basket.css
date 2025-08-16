@@ -1,5 +1,6 @@
 .basket {
-   width: 300px;
+   display: flex;
+   width: 400px;
    background-color: rgb(61, 61, 61);
    padding: 16px;
    min-height: 100vh;
@@ -7,16 +8,19 @@
    border-radius: 8px;
    margin: 16px;
    margin-right: 16px;
+   justify-content: center;
+}
+
+h4 {
+   text-align: center;
 }
 
 .basket-content {
    width: 100%;
-   background-color: rgb(61, 61, 61);
-   position: sticky;
-   top: 16px;
    display: flex;
    flex-direction: column;
    align-items: center;
+   overflow: overlay;
 }
 
 .list {
@@ -26,16 +30,18 @@
 
 .basket-row {
    display: flex;
-   justify-content: space-around;
-   align-items: end;
    margin: 18px 0;
+   flex-direction: column;
+   width: 100%;
 }
 
 .basket-container {
    display: flex;
    flex-direction: row;
    align-items: center;
-   gap: 10px;
+   width: 100%;
+   justify-content: space-around;
+   margin-top: 8px;
 }
 
 .basket-end {
@@ -50,6 +56,8 @@
    display: flex;
    justify-content: center;
    padding: 8px;
+   align-items: center;
+   margin-top: 0;
 }
 
 .order-button {
@@ -77,9 +85,37 @@
 }
 
 .mobileBasket {
+   display: flex;
+   border: 1px solid black;
+   width: 100%;
+   position: sticky;
+   bottom: 0;
+   max-height: 30vh;
+   overflow: overlay;
+   background-color: rgb(61, 61, 61);
+   justify-content: center;
+   flex-direction: column;
+   padding: 16px;
 }
 
 .mobileBody {
    margin: 0;
    overflow: hidden;
+}
+
+.fixPosition {
+   display: flex;
+   justify-content: space-around;
+   flex: 1;
+}
+
+.mobileFooterBasket {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.mobileHeader {
+   text-align: center;
 }

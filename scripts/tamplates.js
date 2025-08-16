@@ -38,18 +38,19 @@ function getDrinkTemplates(drink, menuindex) {
 
 function getBasketTemplates(basketlist, basketindex) {
     return `
-        <div class="basket-row">
-           <div class="basket-container">
-                <button class="basket-nav" onclick="decreaseItem(${basketindex})">-</button>
-                <button class="basket-nav" onclick="increaseItem(${basketindex})">+</button>
-                <span>${basketlist.amount}</span>
-                <h4>${basketlist.name}</h4>
-           </div>
-           <div class="basket-end">
-                <span>${basketlist.price.toFixed(2)}€ / Stk</span>
-                <button class="basket-nav" onclick="removeItem(${basketindex})">x</button>
+            <div class="basket-container">
+              <div class="fixPosition">
+                    <button class="basket-nav" onclick="decreaseItem(${basketindex})">-</button>
+                    <span>X ${basketlist.amount}</span>
+                    <button class="basket-nav" onclick="increaseItem(${basketindex})">+</button>
+                 </div>
+                 <div class="fixPosition">
+                    <h4>${basketlist.name}<br>${basketlist.price.toFixed(2)}€</h4>
+                </div>
+                <div class="fixPositions">          
+                     <button class="basket-nav" onclick="removeItem(${basketindex})">x</button>    
+                </div>          
             </div>
-        </div>
         `;
 }
 

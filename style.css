@@ -20,7 +20,7 @@ body {
    border-radius: 8px;
 }
 
-.main {
+main {
    display: flex;
 }
 
@@ -42,7 +42,7 @@ h2 {
    padding-right: 16px;
 }
 .left-wrapper {
-   width: calc(100% - 300px);
+   width: calc(100% - 400px);
    display: flex;
    flex-direction: column;
    padding: 16px;

@@ -55,7 +55,7 @@ let restaurantMenu = [
             "amount": 0,
         },
         {
-            "name": "Tomaten Mozerella Salat",
+            "name": "Tomaten Salat",
             "ingredients": "mit Mozzarella und Tomaten",
             "img": "./assets/img/food1.png",
             "price": 8.99,

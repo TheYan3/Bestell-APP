@@ -4,6 +4,7 @@
    }
 
    .mobileBasket {
+      display: none;
    }
 }
 @media (max-width: 880px) {

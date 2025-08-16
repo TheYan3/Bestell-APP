@@ -58,31 +58,31 @@
                      href="https://support.google.com/maps/answer/6230175?hl=de&co=GENIE.Platform%3DAndroid"
                      >Bewertungen (4,5 von 5)</a
                   >Lieferzeit: 30-45 Minuten | Lieferkosten: 2,50 €
-               </section>
 
-               <nav>
-                  <button
-                     type="button"
-                     class="tab-button"
-                     id="Tab-filter"
-                     onclick="filterTabs(1)">
-                     Hauptgerichte
-                  </button>
-                  <button
-                     type="button"
-                     class="tab-button"
-                     id="Tab-filter"
-                     onclick="filterTabs(2)">
-                     Salata
-                  </button>
-                  <button
-                     type="button"
-                     class="tab-button"
-                     id="Tab-filter"
-                     onclick="filterTabs(3)">
-                     Getränke
-                  </button>
-               </nav>
+                  <nav>
+                     <button
+                        type="button"
+                        class="tab-button"
+                        id="Tab-filter"
+                        onclick="filterTabs(1)">
+                        Hauptgerichte
+                     </button>
+                     <button
+                        type="button"
+                        class="tab-button"
+                        id="Tab-filter"
+                        onclick="filterTabs(2)">
+                        Salata
+                     </button>
+                     <button
+                        type="button"
+                        class="tab-button"
+                        id="Tab-filter"
+                        onclick="filterTabs(3)">
+                        Getränke
+                     </button>
+                  </nav>
+               </section>
 
                <section id="menu-box">
                   <section class="list" id="mainmenu-list">
@@ -112,13 +112,17 @@
             </div>
 
             <section id="basket" class="basket">
-               <div class="basket-content">
-                  <h2>Warenkorb</h2>
-                  <div id="court-basket"></div>
-                  <h3>Total:</h3>
-                  <div id="basket-total"></div>
+               <div class="basketWrapper">
+                  <header>
+                     <h2>Warenkorb</h2>
+                  </header>
+                  <div class="basket-content">
+                     <div id="court-basket"></div>
+                     <h3>Total:</h3>
+                     <div id="basket-total"></div>
+                  </div>
 
-                  <div class="order-button">
+                  <footer class="order-button">
                      <p>
                         Klicke auf den Button, um die
                         Test-Bestellung-Bestätigung zu sehen.
@@ -129,42 +133,61 @@
                         onclick="openSuccedDialog()">
                         Bestellung abschicken
                      </button>
-                  </div>
-
-                  <dialog
-                     aria-haspopup="dialog"
-                     aria-labelledby="dialogTitel"
-                     aria-describedby="dialogDescr"
-                     id="orderdialog"
-                     class="dialog">
-                     <div class="dialogWrapper">
-                        <head>
-                           <h2 id="dialogTitel">
-                              Vielen Dank, für Ihre Test Bestellung!
-                           </h2>
-                        </head>
-                        <section>
-                           <p id="dialogDescr">
-                              Ihre bestellung wird für sie vorbereitet!
-                           </p>
-                        </section>
-                        <footer>
-                           <button
-                              aria-label="Dialog schließen"
-                              type="button"
-                              onclick="closSuccedDialog()">
-                              Zur Startseite
-                           </button>
-                        </footer>
-                     </div>
-                  </dialog>
+                  </footer>
                </div>
+               <dialog
+                  aria-haspopup="dialog"
+                  aria-labelledby="dialogTitel"
+                  aria-describedby="dialogDescr"
+                  id="orderdialog"
+                  class="dialog">
+                  <div class="dialogWrapper">
+                     <head>
+                        <h2 id="dialogTitel">
+                           Vielen Dank, für Ihre Test Bestellung!
+                        </h2>
+                     </head>
+                     <section>
+                        <p id="dialogDescr">
+                           Ihre bestellung wird für sie vorbereitet!
+                        </p>
+                     </section>
+                     <footer>
+                        <button
+                           aria-label="Dialog schließen"
+                           type="button"
+                           onclick="closSuccedDialog()">
+                           Zur Startseite
+                        </button>
+                     </footer>
+                  </div>
+               </dialog>
             </section>
          </main>
 
          <footer class="appFooter">
             <p>&copy; 2025 BestellApp</p>
          </footer>
+
+         <dialog id="mobileBasket" class="mobileBasket">
+            <header class="mobileHeader">
+               <h2>Warenkorb</h2>
+            </header>
+            <div class="basket-content" id="mobileCourtBasket"></div>
+            <footer class="mobileFooterBasket">
+               <h3>Total:</h3>
+               <div id="mobileBasketTotal"></div>
+
+               <div class="order-button">
+                  <button
+                     aria-controls="dialog"
+                     type="button"
+                     onclick="openSuccedDialog()">
+                     Bestellung abschicken
+                  </button>
+               </div>
+            </footer>
+         </dialog>
       </div>
       <script src="./scripts/dialog.js"></script>
    </body>

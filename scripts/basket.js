@@ -7,11 +7,16 @@ function loadBasketFromLocalStorage() {
 
 function renderBasket() {
     const basketRef = document.getElementById('court-basket');
+    const mobileBasketRef = document.getElementById('mobileCourtBasket');
+    
     basketRef.innerHTML = ""
+    mobileBasketRef.innerHTML = ""
+
     for (let basketindex = 0; basketindex < basket.length; basketindex++) {
         const basketlist = basket[basketindex];
 
         basketRef.innerHTML += getBasketTemplates(basketlist, basketindex);
+        mobileBasketRef.innerHTML += getBasketTemplates(basketlist, basketindex);
     }
 
     updateBasketTotal();
@@ -38,6 +43,7 @@ function removeItem(index) {
 function updateBasketTotal() {
     const total = basket.reduce((sum, item) => sum + item.price * item.amount, 0);
     document.getElementById('basket-total').textContent = total.toFixed(2) + '€';
+    document.getElementById('mobileBasketTotal').textContent = total.toFixed(2) + '€';
 }
 
 function toggleBasket() {
