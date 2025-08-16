@@ -7,6 +7,8 @@
 
 .tab-button {
    flex: 1;
+   display: flex;
+   justify-content: center;
 }
 button:hover {
    box-shadow: 0 0 20px rgba(212, 176, 120, 0.6);

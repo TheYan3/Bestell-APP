@@ -21,8 +21,8 @@ function getMainmenu() {
     let mainmenuRef = document.getElementById('mainmenu-list')
 
     for (let menuindex = 0; menuindex < restaurantMenu[0].mainmenu.length; menuindex++) { 
-        const mainmenu = restaurantMenu[0].mainmenu[menuindex]  
-        mainmenuRef.innerHTML +=  getMainmenuTemplates(mainmenu, menuindex);
+        const item = restaurantMenu[0].mainmenu[menuindex]  
+        mainmenuRef.innerHTML +=   getMenuTemplate(item, menuindex, 0);
     }
 }
 
@@ -30,8 +30,8 @@ function getSaladmenu() {
     let saladRef = document.getElementById('saladmenu-list')
     
     for (let menuindex = 0; menuindex < restaurantMenu[1].salad.length; menuindex++) {
-        const salad = restaurantMenu[1].salad[menuindex];
-        saladRef.innerHTML += getSaladTemplates(salad, menuindex);
+        const item = restaurantMenu[1].salad[menuindex];
+        saladRef.innerHTML +=  getMenuTemplate(item, menuindex, 1);
     }  
 }
 
@@ -39,8 +39,8 @@ function getDrinksmenu() {
     let drinkRef = document.getElementById('drinkmenu-list')
 
     for (let menuindex = 0; menuindex < restaurantMenu[2].drink.length; menuindex++) {
-        const drink = restaurantMenu[2].drink[menuindex];
-        drinkRef.innerHTML += getDrinkTemplates(drink, menuindex);
+        const item = restaurantMenu[2].drink[menuindex];
+        drinkRef.innerHTML +=  getMenuTemplate(item, menuindex, 2);
     }  
 }
 

@@ -57,6 +57,8 @@
 
    button {
       box-shadow: none;
+      padding: 8px;
+      font-size: 16px;
    }
 
    .struktur-wrapper {

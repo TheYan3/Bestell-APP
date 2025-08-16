@@ -1,40 +1,15 @@
-function getMainmenuTemplates(mainmenu, menuindex) {
-    return ` 
-     <button onclick="getToBasket(0, ${menuindex})">
-     <div class="text-button" id="court-id">
-     <h3>${mainmenu.name}</h3>
-     <p>${mainmenu.ingredients}</p>
-     <span class="price">${mainmenu.price}€</span> 
-     </div>
-     <img class="basket-img" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
+function getMenuTemplate(item, menuindex, categoryIndex) {
+    return `
+     <button class="tamplatebutton" onclick="getToBasket(${categoryIndex}, ${menuindex})">
+        <div class="text-button" id="court-id">
+            <h3>${item.name}</h3>
+            ${item.ingredients ? `<p>${item.ingredients}</p>` : ""}
+            <span class="price">${item.price}€</span> 
+        </div>
+        <img class="basket-img" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Warenkorb hinzufügen" />
      </button>
-    `;  
+    `;
 }
-
-function getSaladTemplates(salad, menuindex) {
-    return ` 
-     <button onclick="getToBasket(1, ${menuindex})"> 
-     <div class="text-button" id="court-id">
-     <h3>${salad.name}</h3>
-     <p>${salad.ingredients}</p>
-     <span class="price">${salad.price}€</span> 
-     </div>
-     <img class="basket-img" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
-     </button>
-    `;  
-} 
-
-function getDrinkTemplates(drink, menuindex) {
-    return ` 
-     <button onclick="getToBasket(2, ${menuindex})"> 
-     <div class="text-button" id="court-id">
-     <h3>${drink.name}</h3>
-     <span class="price">${drink.price}€</span> 
-     </div>
-     <img class="basket-img" src="./assets/icons/zum-warenkorb-hinzufugen (1).png" alt="zum Wartenkorb hinzufügen" />
-     </button>
-    `;  
-} 
 
 function getBasketTemplates(basketlist, basketindex) {
     return `

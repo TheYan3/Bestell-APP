@@ -10,6 +10,14 @@ button {
    flex-direction: row;
    justify-content: space-between;
    box-shadow: -9px 8px 20px rgba(0, 0, 0, 0.4);
+   font-size: 24px;
+}
+
+.tamplatebutton {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   text-align: left;
 }
 
 .text-button {
