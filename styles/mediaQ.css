@@ -1,3 +1,9 @@
+@media (max-width: 1000px) {
+   .logo-mario {
+      width: 150px;
+   }
+}
+
 @media (min-width: 880px) {
    .handyBasket {
       display: none;

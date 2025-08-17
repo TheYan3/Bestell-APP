@@ -5,23 +5,26 @@
 body {
    min-height: 100vh;
    background-color: #303030;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
 }
 
 .appHeader {
-   align-items: center;
    background: #ff8604;
-   display: flex;
-   justify-content: space-between;
-   height: 90px;
+   height: 160px;
    outline: 1px solid rgba(0, 0, 0, 0.8);
-   padding: 16px;
    box-shadow: -9px 10px 20px rgba(0, 0, 0, 0.4);
-   margin: 0 16px;
    border-radius: 8px;
 }
 
-main {
+.wrapper {
+   max-width: 1920px;
+   margin: auto;
    display: flex;
+   height: 100%;
+   align-items: center;
+   padding: 0 16px;
 }
 
 nav {
@@ -49,13 +52,11 @@ h2 {
 }
 
 .appFooter {
-   background-color: #ff8604;
-   height: 120px;
-   display: flex;
-   align-items: center;
-   padding: 16px;
+   background: #ff8604;
+   height: 160px;
+   outline: 1px solid rgba(0, 0, 0, 0.8);
+   box-shadow: -9px 10px 20px rgba(0, 0, 0, 0.4);
    border-radius: 8px;
-   margin: 0 16px;
 }
 
 .aotLogo {

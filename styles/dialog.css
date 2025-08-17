@@ -16,3 +16,12 @@
    flex-direction: column;
    align-items: center;
 }
+
+.totalWrapper {
+   display: flex;
+   gap: 8px;
+}
+
+.dialogButton {
+   margin: 0;
+}

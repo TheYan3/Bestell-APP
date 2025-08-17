@@ -19,17 +19,18 @@
       <script src="script.js"></script>
    </head>
    <body id="start" onload="init()">
-      <div class="pageWrapper">
-         <header class="appHeader">
-            <a onclick="filterTabs(0)" href="#start"
-               ><img
-                  class="logo"
-                  src="./assets/Logo/Bestell App- Logo.svg"
-                  alt="bestellapp logo"
-            /></a>
-         </header>
-
-         <main>
+      <header class="appHeader">
+         <div class="wrapper">
+         <a onclick="filterTabs(0)" href="#start"
+            ><img
+               class="logo"
+               src="./assets/Logo/Bestell App- Logo.svg"
+               alt="bestellapp logo"
+         /></a>
+      </div>
+      </header>
+      <main>
+      <div class="mainWrapper">
             <div id="leftWrapper" class="left-wrapper">
                <div class="aotLogo">
                   <img
@@ -164,30 +165,30 @@
             </dialog>
          </main>
 
-         <footer class="appFooter">
-            <p>&copy; 2025 BestellApp</p>
-         </footer>
-
-         <dialog id="mobileBasket" class="mobileBasket">
-            <header class="mobileHeader">
-               <h2>Warenkorb</h2>
-            </header>
-            <div class="basket-content" id="mobileCourtBasket"></div>
-            <footer class="mobileFooterBasket">
-               <h3>Total:</h3>
-               <div id="mobileBasketTotal"></div>
-
-               <div class="order-button">
-                  <button
-                     aria-controls="dialog"
-                     type="button"
-                     onclick="openSuccedDialog()">
-                     Bestellung abschicken
-                  </button>
-               </div>
-            </footer>
-         </dialog>
+       
       </div>
+      <footer class="appFooter">
+         <div class="wrapper">
+         <p>&copy; 2025 BestellApp</p>
+      </div>
+      </footer>
+      <dialog id="mobileBasket" class="mobileBasket">
+         <header class="mobileHeader">
+            <h2>Warenkorb</h2>
+         </header>
+         <div class="basket-content" id="mobileCourtBasket"></div>
+         <footer class="mobileFooterBasket">
+            <h3 class="totalWrapper"><p>Total:</p> <p id="mobileBasketTotal"></p></h3>
+            <div class="order-button">
+               <button class="dialogButton"
+                  aria-controls="dialog"
+                  type="button"
+                  onclick="openSuccedDialog()">
+                  Bestellung abschicken
+               </button>
+            </div>
+         </footer>
+      </dialog>
       <script src="./scripts/dialog.js"></script>
    </body>
 </html>

@@ -26,10 +26,10 @@ button:hover {
    left: 50%;
    transform: translate(-50%, -50%);
    z-index: 10;
-   width: 100px;
+   width: 200px;
    border: 1px solid black;
    box-shadow: -12px 1px 20px rgba(0, 0, 0, 0.4);
-   border-radius: 90px;
+   border-radius: 100px;
 }
 
 .categorie-img {
