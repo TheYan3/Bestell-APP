@@ -1,17 +1,12 @@
 const dialogRef = document.getElementById("orderdialog");
 
-function openSuccedDialog() {
-    if (basket.length == 0) {  
-        alert("Du hast nichts im Warenkorb!")   
-    }else {
-        dialogRef.showModal();
-    }   
-}
+const openSuccedDialog = () => basket.length 
+    ? dialogRef.showModal() 
+    : alert("Du hast nichts im Warenkorb!");
 
 function closSuccedDialog() {
     dialogRef.close()
     removeAllItems()
-    togglBasket()
 }
 
 function removeAllItems() {
