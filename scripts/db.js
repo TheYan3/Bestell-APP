@@ -31,7 +31,7 @@ let restaurantMenu = [
         },
         {
             "name": "Pizza Vegetaria",
-            "ingredients": "mit Sesongnalem Gemüse",
+            "ingredients": "mit saisonalem Gemüse",
             "img": "./assets/img/food1.png",
             "price": 10.99,
             "amount": 0,
@@ -55,15 +55,15 @@ let restaurantMenu = [
             "amount": 0,
         },
         {
-            "name": "Tomaten Salat",
+            "name": "Tomatensalat",
             "ingredients": "mit Mozzarella und Tomaten",
             "img": "./assets/img/food1.png",
             "price": 8.99,
             "amount": 0,
         },
         {
-            "name": "Wurst Salat",
-            "ingredients": "mit Leoner, gurke und Käse",
+            "name": "Wurstsalat",
+            "ingredients": "mit Lyoner, Gurke und Käse",
             "img": "./assets/img/food1.png",
             "price": 14.99,
             "amount": 0,
