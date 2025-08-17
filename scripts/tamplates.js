@@ -14,15 +14,13 @@ function getMenuTemplate(item, menuindex, categoryIndex) {
 function getBasketTemplates(basketlist, basketindex) {
     return `
             <div class="basket-container">
-              <div class="fixPosition">
+                 <div class="fixPosition">
                     <button class="basket-nav" onclick="decreaseItem(${basketindex})">-</button>
                     <span>X ${basketlist.amount}</span>
                     <button class="basket-nav" onclick="increaseItem(${basketindex})">+</button>
-                 </div>
-                 <div class="fixPosition">
+                 </div class="fixPosition">
                     <h4>${basketlist.name}<br>${basketlist.price.toFixed(2)}€</h4>
-                </div>
-                <div class="fixPositions">          
+                <div class="endPosition">          
                      <button class="basket-nav" onclick="removeItem(${basketindex})">x</button>    
                 </div>          
             </div>
